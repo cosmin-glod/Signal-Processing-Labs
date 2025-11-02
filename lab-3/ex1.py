@@ -38,3 +38,5 @@ fourier_multiplication = np.dot(fourier_matrix, fourier_h)
 
 identity_n = N * np.eye(N)
 print(np.allclose(identity_n, fourier_multiplication, atol=1e-3))
+
+# without atol, it would give the False result
